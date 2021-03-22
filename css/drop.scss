@@ -1,8 +1,8 @@
-$dropArrowOffset: 2px;
-$dropArrowRadius: 7px;
+$dropArrowOffset: 10px;
+$dropArrowRadius: 5px;
 
-$dropMenuBorderRadius: 5px;
-$dropMenuPrimaryColor: lighten(#111, 15%);
+$dropMenuBorderRadius: 20px;
+$dropMenuPrimaryColor: white;
 $dropMenuLighterColor: #bdc3c7;
 $dropMenuSecondaryColor: #148a73;
 
@@ -26,7 +26,6 @@ $dropAnimationSpeedMultiplier: 1;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-smoothing: antialiased;
 
   &.is-disabled {
     cursor: not-allowed;
@@ -92,6 +91,9 @@ $dropAnimationSpeedMultiplier: 1;
  **********************/
 
 .drop-arrow {
+
+  visibility: hidden;
+
   & {
     border-left: $dropArrowRadius solid transparent;
     border-right: $dropArrowRadius solid transparent;
@@ -141,7 +143,6 @@ $dropAnimationSpeedMultiplier: 1;
     font-weight: 400;
     list-style: none;
     margin: 0;
-    padding: 5px;
     position: absolute;
     white-space: nowrap;
   }
@@ -204,48 +205,35 @@ $dropAnimationSpeedMultiplier: 1;
 }
 
 /**************************
- * Drop List Button Element
+ * Drop List  q Element
  **************************/
 
 .drop-list__btn {
   background-color: transparent;
   border: none;
-  border-radius: 2px;
-  color: #FFF;
+  color: black;
   cursor: pointer;
   font: inherit;
   display: block;
   outline: none;
-  padding: 11.2px;
+  padding: 15px;
   text-align: left;
   text-decoration: none;
   width: 100%;
 }
 
+#ru-button {
+  border-radius: 20px 20px 0 0;
+}
+
+#uz-button {
+  border-radius: 0 0 20px 20px;
+}
+
 .drop-list__btn.is-selected {
-  background-color: lighten($dropMenuPrimaryColor, 12%);
-
-  // Secondary Color Scheme
-  .drop.-color-secondary & {
-    background-color: lighten($dropMenuSecondaryColor, 12%);
-  }
-
-  // Lighter Default Color Scheme
-  .drop.-color-lighter & {
-    background-color: darken($dropMenuLighterColor, 8%);
-  }
+  background-color: darken($dropMenuPrimaryColor, 12%);
 }
 
 .drop-list__btn:hover {
-  background-color: lighten($dropMenuPrimaryColor, 10%);
-
-  // Secondary Color Scheme
-  .drop.-color-secondary & {
-    background-color: lighten($dropMenuSecondaryColor, 10%);
-  }
-
-  // Lighter Default Color Scheme
-  .drop.-color-lighter & {
-    background-color: darken($dropMenuLighterColor, 10%);
-  }
+  background-color: darken($dropMenuPrimaryColor, 5%);
 }

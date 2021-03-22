@@ -42,7 +42,7 @@ header
     grid-column: 1 / 13
     background-color: $bg-color
     display: flex
-    justify-content: space-between
+    justify-content: space-around
     align-items: center
 
 nav
@@ -111,3 +111,29 @@ footer
     position: relative
     top: 22px
     left: -60px
+
+#btn-rus
+    background-color: transparent
+    background-image: url(/images/russia.svg)
+    background-size: cover
+    height: 30px
+    width: 30px
+    border: none
+    transition: all .2s ease-in-out
+
+    &:hover
+        outline: none
+        transform: scale(1.1)
+
+#btn-uz
+    background-color: transparent
+    background-image: url(/images/uzbekistan.svg)
+    background-size: cover
+    height: 30px
+    width: 30px
+    border: none
+    transition: all .2s ease-in-out
+
+    &:hover
+        transform: scale(1.1)
+        outline: none
