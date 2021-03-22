@@ -26,11 +26,23 @@ $purple: #E4C1F9
 .purple
     background-color: $purple
 
+@mixin click-transform
+    transition: all .1s ease-in-out
+    &:hover
+        box-shadow: 2px 15px 30px -5px rgba(0, 0, 0, 0.2)
+        transform: scale(1.03)
+    &:active
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15)
+        transform: scale(.98)
+
 *
     padding: 0
     margin: 0
     text-decoration: none
     font-family: 'Montserrat', sans-serif
+
+    *:focus
+        outline: none
 
 body
     color: #000
@@ -102,11 +114,12 @@ footer
     align-items: center
 
 .splide__list > li
-    margin: 0 30px 0 30px
+    margin: 40px 30px 40px 30px
     font-weight: 700
     font-size: 18px
     height: 60px
     border-radius: 20px
+    @include click-transform
 
 .splide__list > li > a
     width: 100%
@@ -147,11 +160,15 @@ footer
     height: 30px
     width: 30px
     border: none
-    transition: all .2s ease-in-out
+    transition: all .05s
 
     &:hover
         outline: none
-        transform: scale(1.1)
+        transform: scale(1.03)
+
+    &:active
+        outline: none
+        transform: scale(0.98)
 
 #btn-uz
     background-color: transparent
@@ -160,8 +177,12 @@ footer
     height: 30px
     width: 30px
     border: none
-    transition: all .2s ease-in-out
+    transition: all .05s
 
     &:hover
-        transform: scale(1.1)
         outline: none
+        transform: scale(1.03)
+
+    &:active
+        outline: none
+        transform: scale(0.98)
