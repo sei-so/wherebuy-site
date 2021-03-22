@@ -7,6 +7,7 @@
     <title>whereby | Онлайн-гипермаркет</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="/css/splide.min.css">
+    <link rel="stylesheet" href="/css/drop.css">
 </head>
 <body>
     <div class="content">
@@ -18,6 +19,16 @@
                 <input placeholder="Что вы ищете?">
                 <object class="search-icon" type="image/svg+xml" data="/images/search-icon.svg" width="20" height="20"></object>
             </div>
+            <div class="drop drop--down">
+                <button class="btn">RU</button>
+                <div class="drop__content -transition-slide-in">
+                  <div class="drop-arrow"></div>
+                  <div class="drop-list -size-medium -position-left -border-rounded ">
+                    <button class="drop-list__btn">Русский</button>
+                    <button class="drop-list__btn">O'zbekcha</button>
+                  </div>
+                </div>
+              </div>
         </header>
         <nav>
             <div class="splide">
@@ -31,9 +42,7 @@
                         <li class="splide__slide">Бытовая техника</li>
                         <li class="splide__slide">Хозтовары</li>
                     </ul>
-
                 </div>
-                
             </div>
         </nav>
         <div class="main-headline">
@@ -48,6 +57,7 @@
     <script src="/js/index.js"></script>
     <!-- CDN hosted script files-->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
 
 </body>
 </html>
