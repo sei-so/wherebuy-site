@@ -172,7 +172,7 @@ $dropAnimationSpeedMultiplier: 1;
   // Position Modifier
   &.-position-center { left:  50%; transform: translateX(-50%) }
   &.-position-left   { right: 0 }
-  &.-position-right  { left:  0 }
+  &.-position-right  { left:  2.5rem; top: -2.5rem }
 
   // Size Modifier
   &.-size-medium { width: 150px }

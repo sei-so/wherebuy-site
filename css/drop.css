@@ -189,7 +189,8 @@
 }
 
 .drop-list.-position-right {
-  left: 0;
+  left: 2.5rem;
+  top: -2.5rem;
 }
 
 .drop-list.-size-medium {
