@@ -213,6 +213,13 @@ footer {
   border: 100px solid blue;
 }
 
+.search-icon {
+  visibility: hidden;
+  position: relative;
+  top: 22px;
+  left: -60px;
+}
+
 .search-bar > input {
   color: #808080;
   background: #fff;
@@ -230,10 +237,11 @@ footer {
   font-size: 18px;
 }
 
-.search-icon {
-  position: relative;
-  top: 22px;
-  left: -60px;
+.search-bar > input:focus {
+  -webkit-box-shadow: 20px 20px 55px rgba(169, 222, 249, 0.6);
+          box-shadow: 20px 20px 55px rgba(169, 222, 249, 0.6);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 #btn-rus {

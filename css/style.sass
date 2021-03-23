@@ -160,6 +160,12 @@ footer
         outline: none !important
         border: 100px solid blue
 
+.search-icon
+    visibility: hidden
+    position: relative
+    top: 22px
+    left: -60px
+
 .search-bar > input
     color: #808080
     background: #fff
@@ -172,10 +178,9 @@ footer
     box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.25)
     font-size: 18px
 
-.search-icon
-    position: relative
-    top: 22px
-    left: -60px
+    &:focus
+        box-shadow: 20px 20px 55px rgba(169, 222, 249, 0.6)
+        transform: scale(1.01)
 
 #btn-rus
     background-color: transparent
