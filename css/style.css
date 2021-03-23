@@ -208,6 +208,7 @@ footer {
   padding: 0 40px 0 40px;
   -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
 }
 
 .search-bar > input:focus {
@@ -219,6 +220,14 @@ footer {
   position: relative;
   top: 22px;
   left: -60px;
+}
+
+.search-icon::-moz-selection {
+  background: transparent;
+}
+
+.search-icon::selection {
+  background: transparent;
 }
 
 #btn-rus {
