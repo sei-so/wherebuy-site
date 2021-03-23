@@ -3,10 +3,10 @@ const splideOptions = {
     type   : 'loop',
     perPage: 4,
     speed: 300,
-    autoHeight: true,
+    height: "37rem",
     perMove: 1,
     autoplay: true,
-    interval: 2500,
+    interval: 3000,
     pagination: false,
 }
 

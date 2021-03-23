@@ -2,7 +2,7 @@
 
 /* Theming */
 
-$primary-color: #A9DEF9
+$primary-color: #66BFEC
 $secondary-color: #FF99C8
 $bg-color: #F6F6FF
 $red: #FF99C8
@@ -77,6 +77,10 @@ h3
     font-weight: 500
     font-size: 1.4rem
 
+h4
+    font-weight: 700
+    font-size: 1.5rem
+
 a
     color: inherit
 
@@ -109,12 +113,6 @@ a
     width: 25rem
     justify-content: space-between
 
-.content
-    margin: 0 auto
-
-.content > *
-    padding: 1.8rem
-
 nav
     position: relative
     top: 5rem
@@ -131,6 +129,9 @@ nav
     font-weight: 700
     font-size: 1rem
 
+    *:hover
+        color: $primary-color
+
 .second-headline
     grid-column: 4 / 10
     display: flex
@@ -138,6 +139,8 @@ nav
     flex-wrap: wrap
     justify-content: space-around
     background-color: transparent
+    margin-bottom: 5rem
+    margin-top: 8rem
 
 .second-headline > *
     margin: 0.625rem
@@ -146,6 +149,7 @@ main
     background-color: white
     height: 120rem
     border-radius: 80px 80px 0 0
+    padding: 8rem
 
 footer
     background-color: #707070
@@ -155,10 +159,6 @@ footer
     width: 810px
     display: flex
     flex-direction: row
-
-    &::focus
-        outline: none !important
-        border: 100px solid blue
 
 .search-icon
     visibility: hidden
@@ -170,17 +170,18 @@ footer
     color: #808080
     background: #fff
     border: none
-    transition: all 240ms ease-out
+    transition: all 240ms ease-in-out
     border-radius: 20px
     flex-grow: 2
     height: 64px
     padding: 0 40px 0 40px
-    box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.25)
+    box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.45)
     font-size: 18px
 
     &:focus
-        box-shadow: 20px 20px 55px rgba(169, 222, 249, 0.6)
-        transform: scale(1.01)
+        box-shadow: 20px 20px 55px rgba(169, 222, 249, 0.2)
+        transform: scale(1.02)
+        outline: none !important
 
 #btn-rus
     background-color: transparent
@@ -216,6 +217,31 @@ footer
         outline: none
         transform: scale(0.98)
 
+.bestsellers
+    height: 45rem
+    // background: #EBEBEB
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+.bestsellers-headline
+    display: flex
+    width: 14rem
+    justify-content: space-between
+    position: relative
+
+.splide__slide
+    margin: 2rem 0 3rem 5rem !important
+    border-radius: 20px
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
+
+#flame-icon
+    width: 2.2rem
+    height: 2.2rem
+    position: absolute
+    bottom: 0
+    right: 0
+
 .btn-1
     width: 10.625rem
     height: 3.75rem
@@ -231,6 +257,7 @@ footer
         outline: none
         box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.1)
         transform: scale(1.03)
+        color: $primary-color
     &:active
         outline: none
         box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.25)
