@@ -336,8 +336,9 @@ footer {
 
 #product-camera-pic {
   background-image: url(/images/camera.jpg);
-  background-position-y: -2.8rem;
-  background-size: cover;
+  background-position-x: 1.5rem;
+  background-position-y: -2rem;
+  background-size: 90%;
   background-repeat: no-repeat;
 }
 
@@ -357,9 +358,9 @@ footer {
 
 #product-watch-pic {
   background-image: url(/images/watch.jpg);
-  background-position-x: -0.5rem;
-  background-position-y: 1rem;
-  background-size: contain;
+  background-position-x: 0rem;
+  background-position-y: 2rem;
+  background-size: 95%;
   background-repeat: no-repeat;
 }
 
