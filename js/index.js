@@ -22,3 +22,7 @@ document.addEventListener( 'DOMContentLoaded', function () {
 document.addEventListener( 'DOMContentLoaded', function () {
     new Splide( '.up-to-x-cards', splideOptions ).mount();
 } );
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.new-cards', splideOptions ).mount();
+} );
