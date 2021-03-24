@@ -522,4 +522,25 @@ footer {
     font-size: 10px;
   }
 }
+
+@media screen and (max-width: 420px) and (orientation: portrait) {
+  html {
+    font-size: 8px;
+  }
+  body {
+    width: 100vw;
+  }
+  .search-btn {
+    display: none;
+  }
+  .categories-btn {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .lang-switch > button {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
