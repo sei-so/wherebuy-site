@@ -47,7 +47,7 @@
 }
 
 .green {
-  background-color: #D0F4DE;
+  background-color: #99EFBA;
 }
 
 .blue {
@@ -56,6 +56,26 @@
 
 .purple {
   background-color: #E4C1F9;
+}
+
+.text-red {
+  color: #FF99C8;
+}
+
+.text-yellow {
+  color: #FCF6BD;
+}
+
+.text-green {
+  color: #99EFBA;
+}
+
+.text-blue {
+  color: #A9DEF9;
+}
+
+.text-purple {
+  color: #E4C1F9;
 }
 
 *::-moz-selection {
@@ -270,11 +290,6 @@ nav {
   margin: 0.625rem;
 }
 
-main {
-  border-radius: 80px 80px 0 0;
-  padding: 8rem;
-}
-
 .search-bar {
   width: 50.6rem;
   display: -webkit-box;
@@ -360,6 +375,11 @@ main {
           transform: scale(0.98);
 }
 
+main {
+  border-radius: 80px 80px 0 0;
+  padding: 8rem;
+}
+
 .bestsellers {
   height: 45rem;
   display: -webkit-box;
@@ -410,7 +430,7 @@ main {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  width: 15rem;
   height: 30%;
   border-radius: 0 0 20px 20px;
   padding-top: 2.5rem;
@@ -537,7 +557,7 @@ main {
 }
 
 .on-sale .sale-cards .splide__slide .card-image-container {
-  width: 100%;
+  width: 15rem;
   height: 62.5%;
   border-radius: 20px 20px 0 0;
 }
@@ -680,7 +700,7 @@ main {
 }
 
 .up-to-x .up-to-x-cards .splide__slide .card-image-container {
-  width: 100%;
+  width: 15rem;
   height: 62.5%;
   border-radius: 20px 20px 0 0;
 }
@@ -823,7 +843,7 @@ main {
 }
 
 .new .new-cards .splide__slide .card-image-container {
-  width: 100%;
+  width: 15rem;
   height: 62.5%;
   border-radius: 20px 20px 0 0;
 }
@@ -998,6 +1018,31 @@ footer {
   outline: none;
   -webkit-box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.25);
           box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.25);
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.add-to-cart-btn {
+  cursor: pointer;
+  -webkit-box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.3);
+          box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.3);
+  -webkit-transition: all .05s ease-in-out;
+  transition: all .05s ease-in-out;
+  border: none;
+}
+
+.add-to-cart-btn:hover {
+  outline: none;
+  -webkit-box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.1);
+          box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.1);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+}
+
+.add-to-cart-btn:active {
+  outline: none;
+  -webkit-box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.35);
+          box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.35);
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
 }
