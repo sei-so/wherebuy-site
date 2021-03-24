@@ -1,0 +1,39 @@
+@media screen and (min-width: 2160px) {
+  html {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 1340px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  html {
+    font-size: 8px;
+  }
+  body {
+    width: 100vw;
+  }
+  .search-btn {
+    display: none;
+  }
+  .categories-btn {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .lang-switch > button {
+    display: none;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */

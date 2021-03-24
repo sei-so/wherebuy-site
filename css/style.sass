@@ -1,49 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap')
-
-/* Theming */
-
-$primary-color: #66BFEC
-$secondary-color: #FF99C8
-$bg-color: #F6F6FF
-$red: #FF99C8
-$yellow: #FCF6BD
-$green: #D0F4DE
-$blue: #A9DEF9
-$purple: #E4C1F9
-
-.red
-    background-color: $red
-
-.yellow
-    background-color: $yellow
-
-.green
-    background-color: $green
-
-.blue
-    background-color: $blue
-
-.purple
-    background-color: $purple
-
-@mixin click-transform
-    transition: all .0150s ease-in-out
-    border: none
-
-    &:hover
-        outline: none
-        box-shadow: 2px 15px 30px -5px rgba(0, 0, 0, 0.07)
-        transform: scale(1.02)
-    &:active
-        outline: none
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
-        transform: scale(.99)
-
-.disable-select
-    -webkit-user-select: none
-    -moz-user-select: none
-    -ms-user-select: none
-    user-select: none
+@import "responsive"
+@import "mixins"
+@import "theming"
 
 *
     padding: 0
@@ -54,16 +12,8 @@ $purple: #E4C1F9
     *:focus
         outline: none
 
-    &::selection
-        background: #A9DEF9
-
 html
     font-size: 1em
-
-body
-    color: #000
-    text-align: center
-    background-color: $bg-color
 
 h1
     font-weight: 700
@@ -80,9 +30,6 @@ h3
 h4
     font-weight: 700
     font-size: 1.5rem
-
-a
-    color: inherit
 
 .start-page-full-height
     height: 100vh
@@ -125,20 +72,12 @@ nav
     width: 100%
     justify-content: space-between
 
-.nav-item
-    font-weight: 700
-    font-size: 1rem
-
-    *:hover
-        color: $primary-color
-
 .second-headline
     grid-column: 4 / 10
     display: flex
     flex-direction: column
     flex-wrap: wrap
     justify-content: space-around
-    background-color: transparent
     margin-bottom: 5rem
     margin-top: 8rem
 
@@ -146,14 +85,9 @@ nav
     margin: 0.625rem
 
 main
-    background-color: white
-    height: 120rem
+    height: 150rem
     border-radius: 80px 80px 0 0
     padding: 8rem
-
-footer
-    background-color: #707070
-    height: 18rem
 
 .search-bar
     width: 50.6rem
@@ -167,8 +101,6 @@ footer
     left: -3.75rem
 
 .search-bar > input
-    color: #808080
-    background: #fff
     border: none
     transition: all 240ms ease-in-out
     border-radius: 20px
@@ -184,7 +116,6 @@ footer
         outline: none !important
 
 #btn-rus
-    background-color: transparent
     background-image: url(/images/russia.svg)
     background-size: cover
     height: 1.8rem
@@ -201,7 +132,6 @@ footer
         transform: scale(0.98)
 
 #btn-uz
-    background-color: transparent
     background-image: url(/images/uzbekistan.svg)
     background-size: cover
     height: 1.8rem
@@ -217,91 +147,261 @@ footer
         outline: none
         transform: scale(0.98)
 
+// -- Bestsellers section -- //
+
 .bestsellers
+
     height: 45rem
-    // background: #EBEBEB
     display: flex
     flex-direction: column
     justify-content: space-between
 
-.bestsellers-headline
-    display: flex
-    width: 14rem
-    justify-content: space-between
-    position: relative
+    .bestsellers-headline
+        display: flex
+        width: 14rem
+        justify-content: space-between
+        position: relative
 
-.splide__slide
-    padding: 2.5rem 2.5rem 1em 2.5rem
-    margin: 2rem 0 3rem 5rem !important
-    border-radius: 20px
-    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
+    .best-cards
 
-.card-image-container
-    width: 100%
-    height: 62.5%
-    border-radius: 20px 20px 0 0
+        .splide__slide
+            padding: 2.5rem 2.5rem 1em 2.5rem
+            margin: 2rem 0 3rem 5rem !important
+            border-radius: 20px
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
 
-.card-info-container
+            .card-image-container
+                width: 100%
+                height: 62.5%
+                border-radius: 20px 20px 0 0
+
+            .card-info-container
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                width: 100%
+                height: 30%
+                border-radius: 0 0 20px 20px
+                padding-top: 2.5rem
+
+                .name-price-container
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: flex-start
+                    height: 40%
+
+                .name
+                    font-size: 1rem
+                    font-weight: 500
+                    margin-bottom: 0.5rem
+
+                .price
+                    font-size: 1.3rem
+                    font-weight: 600
+
+                .oldprice
+                    font-size: 1rem
+                    text-decoration: line-through
+
+                .geo-shop-container
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+
+                .geo
+                    font-size: 0.8rem
+
+                .geo-icon
+                    width: 1rem
+                    height: 1rem
+                    background-image: url(/images/geo-icon.svg)
+                    background-size: contain
+                    background-position: center
+                    background-repeat: no-repeat
+
+                .shop
+                    font-size: 0.8rem
+
+                .add-to-cart-btn
+                    font-size: 0.8rem
+                    width: 10rem
+                    height: 2.5rem
+                    border-radius: 30px
+                    margin: 0 auto
+
+                    @include click-transform
+
+// -- On Sale section -- //
+
+.on-sale
+    padding-top: 6rem
+    height: 45rem
     display: flex
     flex-direction: column
     justify-content: space-between
-    width: 100%
-    height: 30%
-    border-radius: 0 0 20px 20px
-    // background: $blue
-    padding-top: 2.5rem
 
-.name-price-container
+    .on-sale-headline
+        display: flex
+        width: 28rem
+        position: relative
+
+    .sale-cards
+
+        .splide__slide
+            padding: 2rem 2rem 1em 2rem
+            margin: 2rem 0 3rem 3rem !important
+            border-radius: 20px
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
+
+            .card-image-container
+                width: 100%
+                height: 62.5%
+                border-radius: 20px 20px 0 0
+
+            .card-info-container
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                width: 100%
+                height: 30%
+                border-radius: 0 0 20px 20px
+                padding-top: 2.5rem
+
+                .name-price-container
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: flex-start
+                    height: 40%
+
+                .name
+                    font-size: 1rem
+                    font-weight: 500
+                    margin-bottom: 0.5rem
+
+                .oldprice
+                    font-size: 1rem
+                    text-decoration: line-through
+
+                .price
+                    font-size: 1.3rem
+                    font-weight: 600
+
+                .geo-shop-container
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+
+                .geo
+                    font-size: 0.8rem
+
+                .geo-icon
+                    width: 1rem
+                    height: 1rem
+                    background-image: url(/images/geo-icon.svg)
+                    background-size: contain
+                    background-position: center
+                    background-repeat: no-repeat
+
+                .shop
+                    font-size: 0.8rem
+
+                .add-to-cart-btn
+                    font-size: 0.8rem
+                    width: 10rem
+                    height: 2.5rem
+                    border-radius: 30px
+                    margin: 0 auto
+
+                    @include click-transform
+
+// -- Up to X section -- //
+
+.up-to-x
+    padding-top: 6rem
+    height: 45rem
     display: flex
     flex-direction: column
     justify-content: space-between
-    align-items: flex-start
-    height: 40%
 
-.name
-    font-size: 1rem
-    font-weight: 500
-    margin-bottom: 0.5rem
+    .up-to-x-headline
+        display: flex
+        width: 28rem
+        position: relative
 
-.oldprice
-    font-size: 1rem
-    color: #808080
-    text-decoration: line-through
+    .up-to-x-cards
 
-.price
-    font-size: 1.3rem
-    font-weight: 600
+        .splide__slide
+            padding: 2rem 2rem 1em 2rem
+            margin: 2rem 0 3rem 3rem !important
+            border-radius: 20px
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
 
-.geo-shop-container
-    display: flex
-    justify-content: space-between
-    align-items: center
+            .card-image-container
+                width: 100%
+                height: 62.5%
+                border-radius: 20px 20px 0 0
 
-.geo
-    font-size: 0.8rem
-    color: #808080
+            .card-info-container
+                display: flex
+                flex-direction: column
+                justify-content: space-between
+                width: 100%
+                height: 30%
+                border-radius: 0 0 20px 20px
+                padding-top: 2.5rem
 
-.geo-icon
-    width: 1rem
-    height: 1rem
-    background-image: url(/images/geo-icon.svg)
-    background-size: contain
-    background-position: center
-    background-repeat: no-repeat
+                .name-price-container
+                    display: flex
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: flex-start
+                    height: 40%
 
-.shop
-    font-size: 0.8rem
-    color: #808080
+                .name
+                    font-size: 1rem
+                    font-weight: 500
+                    margin-bottom: 0.5rem
 
-.add-to-cart-btn
-    font-size: 0.8rem
-    width: 10rem
-    height: 2.5rem
-    background: $blue
-    border-radius: 30px
-    margin: 0 auto
+                .oldprice
+                    font-size: 1rem
+                    text-decoration: line-through
 
-    @include click-transform
+                .price
+                    font-size: 1.3rem
+                    font-weight: 600
+
+                .geo-shop-container
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+
+                .geo
+                    font-size: 0.8rem
+
+                .geo-icon
+                    width: 1rem
+                    height: 1rem
+                    background-image: url(/images/geo-icon.svg)
+                    background-size: contain
+                    background-position: center
+                    background-repeat: no-repeat
+
+                .shop
+                    font-size: 0.8rem
+
+                .add-to-cart-btn
+                    font-size: 0.8rem
+                    width: 10rem
+                    height: 2.5rem
+                    border-radius: 30px
+                    margin: 0 auto
+
+                    @include click-transform
+
+footer
+    height: 18rem
 
 #product-camera-pic
     background-image: url(/images/camera.jpg)
@@ -339,7 +439,6 @@ footer
     height: 3.75rem
     cursor: pointer
     border-radius: 35px
-    background: #fff
     box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.2)
 
     transition: all .05s ease-in-out
@@ -349,43 +448,7 @@ footer
         outline: none
         box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.1)
         transform: scale(1.03)
-        color: $primary-color
     &:active
         outline: none
         box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.25)
         transform: scale(.98)
-
-@media screen and ( min-width: 2160px )
-
-    html
-        font-size: 22px
-
-@media screen and ( max-width: 1340px )
-
-    html
-        font-size: 12px
-
-@media screen and ( max-width: 1000px )
-
-    html
-        font-size: 10px
-
-@media screen and ( max-width: 420px )
-
-    html
-        font-size: 8px
-
-    body
-        width: 100vw
-
-    .search-btn
-        display: none
-
-    .categories-btn
-        display: none
-
-    nav
-        display: none
-
-    .lang-switch > button
-        display: none

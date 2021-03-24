@@ -1,3 +1,4 @@
+// Splide
 
 const splideOptions = {
     type   : 'loop',
@@ -10,7 +11,14 @@ const splideOptions = {
     pagination: false,
 }
 
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.best-cards', splideOptions ).mount();
+} );
 
 document.addEventListener( 'DOMContentLoaded', function () {
-    new Splide( '.splide', splideOptions ).mount();
+    new Splide( '.sale-cards', splideOptions ).mount();
+} );
+
+document.addEventListener( 'DOMContentLoaded', function () {
+    new Splide( '.up-to-x-cards', splideOptions ).mount();
 } );

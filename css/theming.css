@@ -1,0 +1,98 @@
+.red {
+  background-color: #FF99C8;
+}
+
+.yellow {
+  background-color: #FCF6BD;
+}
+
+.green {
+  background-color: #D0F4DE;
+}
+
+.blue {
+  background-color: #A9DEF9;
+}
+
+.purple {
+  background-color: #E4C1F9;
+}
+
+*::-moz-selection {
+  background: #A9DEF9;
+}
+
+*::selection {
+  background: #A9DEF9;
+}
+
+body {
+  color: #000;
+  text-align: center;
+  background-color: #F6F6FF;
+}
+
+.search-bar > input {
+  color: #808080;
+  background: #fff;
+}
+
+.nav-item {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.nav-item *:hover {
+  color: #66BFEC;
+}
+
+main {
+  background: #fff;
+}
+
+footer {
+  background-color: #808080;
+}
+
+a {
+  color: inherit;
+}
+
+.disable-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.price {
+  color: #000;
+}
+
+.oldprice {
+  font-size: 1rem;
+  color: #808080;
+}
+
+.geo {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.shop {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.add-to-cart-btn {
+  background: #A9DEF9;
+}
+
+.btn-1 {
+  background: #fff;
+}
+
+.btn-1:hover {
+  color: #66BFEC;
+}
+/*# sourceMappingURL=theming.css.map */
