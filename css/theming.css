@@ -7,7 +7,7 @@
 }
 
 .green {
-  background-color: #D0F4DE;
+  background-color: #99EFBA;
 }
 
 .blue {
@@ -16,6 +16,26 @@
 
 .purple {
   background-color: #E4C1F9;
+}
+
+.text-red {
+  color: #FF99C8;
+}
+
+.text-yellow {
+  color: #FCF6BD;
+}
+
+.text-green {
+  color: #99EFBA;
+}
+
+.text-blue {
+  color: #A9DEF9;
+}
+
+.text-purple {
+  color: #E4C1F9;
 }
 
 *::-moz-selection {
