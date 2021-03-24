@@ -32,11 +32,11 @@ $purple: #E4C1F9
 
     &:hover
         outline: none
-        box-shadow: 2px 15px 30px -5px rgba(0, 0, 0, 0.1)
+        box-shadow: 2px 15px 30px -5px rgba(0, 0, 0, 0.07)
         transform: scale(1.02)
     &:active
         outline: none
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.07)
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1)
         transform: scale(.99)
 
 .disable-select
@@ -231,6 +231,7 @@ footer
     position: relative
 
 .splide__slide
+    padding: 2.5rem 2.5rem 1em 2.5rem
     margin: 2rem 0 3rem 5rem !important
     border-radius: 20px
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1)
@@ -241,10 +242,65 @@ footer
     border-radius: 20px 20px 0 0
 
 .card-info-container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
     width: 100%
-    height: 37.5%
+    height: 30%
     border-radius: 0 0 20px 20px
+    // background: $blue
+    padding-top: 2.5rem
+
+.name-price-container
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    align-items: flex-start
+    height: 40%
+
+.name
+    font-size: 1rem
+    font-weight: 500
+    margin-bottom: 0.5rem
+
+.oldprice
+    font-size: 1rem
+    color: #808080
+    text-decoration: line-through
+
+.price
+    font-size: 1.3rem
+    font-weight: 600
+
+.geo-shop-container
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.geo
+    font-size: 0.8rem
+    color: #808080
+
+.geo-icon
+    width: 1rem
+    height: 1rem
+    background-image: url(/images/geo-icon.svg)
+    background-size: contain
+    background-position: center
+    background-repeat: no-repeat
+
+.shop
+    font-size: 0.8rem
+    color: #808080
+
+.add-to-cart-btn
+    width: 10rem
+    height: 2.5rem
     background: $blue
+    border-radius: 30px
+    margin: 0 auto
+
+    @include click-transform
 
 #product-camera-pic
     background-image: url(/images/camera.jpg)

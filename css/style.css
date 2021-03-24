@@ -316,6 +316,7 @@ footer {
 }
 
 .splide__slide {
+  padding: 2.5rem 2.5rem 1em 2.5rem;
   margin: 2rem 0 3rem 5rem !important;
   border-radius: 20px;
   -webkit-box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
@@ -329,10 +330,112 @@ footer {
 }
 
 .card-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 100%;
-  height: 37.5%;
+  height: 30%;
   border-radius: 0 0 20px 20px;
+  padding-top: 2.5rem;
+}
+
+.name-price-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  height: 40%;
+}
+
+.name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.oldprice {
+  font-size: 1rem;
+  color: #808080;
+  text-decoration: line-through;
+}
+
+.price {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.geo-shop-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.geo {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.geo-icon {
+  width: 1rem;
+  height: 1rem;
+  background-image: url(/images/geo-icon.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.shop {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.add-to-cart-btn {
+  width: 10rem;
+  height: 2.5rem;
   background: #A9DEF9;
+  border-radius: 30px;
+  margin: 0 auto;
+  -webkit-transition: all .0150s ease-in-out;
+  transition: all .0150s ease-in-out;
+  border: none;
+}
+
+.add-to-cart-btn:hover {
+  outline: none;
+  -webkit-box-shadow: 2px 15px 30px -5px rgba(0, 0, 0, 0.07);
+          box-shadow: 2px 15px 30px -5px rgba(0, 0, 0, 0.07);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.add-to-cart-btn:active {
+  outline: none;
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
 }
 
 #product-camera-pic {
