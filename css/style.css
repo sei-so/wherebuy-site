@@ -202,7 +202,7 @@ footer {
 }
 
 .search-bar {
-  width: 810px;
+  width: 50.6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,8 +215,8 @@ footer {
 .search-icon {
   visibility: hidden;
   position: relative;
-  top: 22px;
-  left: -60px;
+  top: 1.4rem;
+  left: -3.75rem;
 }
 
 .search-bar > input {
@@ -229,11 +229,11 @@ footer {
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
-  height: 64px;
-  padding: 0 40px 0 40px;
+  height: 4rem;
+  padding: 0 2.5rem 0 2.5rem;
   -webkit-box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.45);
           box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.45);
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 .search-bar > input:focus {
@@ -248,8 +248,8 @@ footer {
   background-color: transparent;
   background-image: url(/images/russia.svg);
   background-size: cover;
-  height: 30px;
-  width: 30px;
+  height: 1.8rem;
+  width: 1.8rem;
   border: none;
   -webkit-transition: all .05s;
   transition: all .05s;
@@ -271,8 +271,8 @@ footer {
   background-color: transparent;
   background-image: url(/images/uzbekistan.svg);
   background-size: cover;
-  height: 30px;
-  width: 30px;
+  height: 1.8rem;
+  width: 1.8rem;
   border: none;
   -webkit-transition: all .05s;
   transition: all .05s;
@@ -412,6 +412,7 @@ footer {
 }
 
 .add-to-cart-btn {
+  font-size: 0.8rem;
   width: 10rem;
   height: 2.5rem;
   background: #A9DEF9;
@@ -502,5 +503,17 @@ footer {
           box-shadow: 20px 20px 50px rgba(169, 222, 249, 0.25);
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
+}
+
+@media screen and (max-width: 1340px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
