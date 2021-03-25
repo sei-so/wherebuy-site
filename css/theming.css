@@ -119,4 +119,29 @@ a {
 .btn-1:hover {
   color: #66BFEC;
 }
+
+.copyright {
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #fff;
+}
+
+.bold {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.link {
+  font-size: 0.8rem;
+  color: #F1F1F1;
+}
+
+.link:hover {
+  color: #A9DEF9;
+}
+
+.for-representatives {
+  text-decoration: underline;
+}
 /*# sourceMappingURL=theming.css.map */
